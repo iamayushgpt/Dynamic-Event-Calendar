@@ -11,7 +11,6 @@ const EventList = ({ selectedDate, events, onAddEvent, onDeleteEvent }) => {
    let updatedfilteredEvents = events.filter((item)=> item.name.toLowerCase().includes(searchEvents.toLowerCase()))
    //Setting the updated events by filtering from search value
    setFilteredEvents(updatedfilteredEvents)
-   console.log("Updated FIltered events",updatedfilteredEvents)
   }, [searchEvents])
   
   return (
@@ -52,7 +51,7 @@ const EventList = ({ selectedDate, events, onAddEvent, onDeleteEvent }) => {
         ) : 
         (          
           <ul className="space-y-4">
-            {filteredEvents.map((event, index) => (
+            {(searchEvents == ""? events :filteredEvents).map((event, index) => (
               <li
                 key={index}
                 className={`flex justify-between items-center py-2 px-4 ${

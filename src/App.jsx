@@ -116,8 +116,6 @@ if (Object.keys(cleanedFilteredEvents).length === 0) {
     link.click();
   };
 
-  // console.log(searchEvents);
-  // console.log(selectedDate);
 
   return (
     <div className="relative h-screen flex flex-col bg-gray-100 p-4">

@@ -16,7 +16,7 @@ const Calendar = ({ events, onDayClick }) => {
   const clickBg = useRef(null);
   const [clickedDate, setClickedDate] = useState("");
   const [currentDate, setCurrentDate] = useState(new Date());
-  // console.log(currentDate)
+ 
 
   //rendering the months and year
   const renderHeader = () => (
@@ -84,7 +84,7 @@ const Calendar = ({ events, onDayClick }) => {
             `}
             onClick={() => {
               onDayClick(currentDay); // Pass the correct date to the function to use further
-              console.log(format(currentDay, "yyyy-MM-dd")); //debugging
+              // console.log(format(currentDay, "yyyy-MM-dd")); //debugging
               setClickedDate(currentDay);
             }}
           >

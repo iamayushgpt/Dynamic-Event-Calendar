@@ -20,7 +20,7 @@ const EventModal = ({ selectedDate, onClose, onSave }) => {
 
   return (
     <div className="fixed  inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <form onSubmit={handleSave} className="bg-white p-6 rounded shadow-md w-96">
+      <form onSubmit={(e)=>{handleSave(); e.preventDefault()}} className="bg-white p-6 rounded shadow-md w-96">
         <h2 className="text-lg font-bold mb-4">Add Event - {selectedDate}</h2>
         <select className=" p-2 border rounded mb-4" name="type" id="type" value={eventData.type} onChange={handleChange}>
             <option value="Personal" >Personal</option>
