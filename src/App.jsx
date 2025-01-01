@@ -9,8 +9,6 @@ const App = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [exportDropdownOpen, setExportDropdownOpen] = useState(false);
-  const [searchEvents, setSearchEvents] = useState("");
-  const [isSearchOpen, setisSearchOpen] = useState(false);
 
   //Current month and year
   const [selectedExportMonth, setSelectedExportMonth] = useState(
@@ -124,28 +122,6 @@ if (Object.keys(cleanedFilteredEvents).length === 0) {
   return (
     <div className="relative h-screen flex flex-col bg-gray-100 p-4">
       <div className=" absolute flex gap-6 right-20">
-        <button
-          onClick={() => setisSearchOpen(!isSearchOpen)}
-          className="bg-blue-700 text-white px-4 py-2 rounded"
-        >
-          Search
-        </button>
-        <div>
-          {isSearchOpen && (
-            <div className="absolute left-0 top-1 border border-black ">
-              <input
-                type="text"
-                name="filterEvent"
-                id=""
-                value={searchEvents}
-                placeholder="Search for events"
-                className="pl-2 py-1"
-                onChange={(e) => setSearchEvents(e.target.value)}
-              />
-            </div>
-          )}
-
-        </div>
         <button
           className="bg-blue-700 text-white px-4 py-2 rounded"
           onClick={() => setExportDropdownOpen(!exportDropdownOpen)}
