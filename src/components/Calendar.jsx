@@ -13,7 +13,6 @@ import {
 } from "date-fns";
 
 const Calendar = ({ events, onDayClick }) => {
-  const clickBg = useRef(null);
   const [clickedDate, setClickedDate] = useState("");
   const [currentDate, setCurrentDate] = useState(new Date());
  
@@ -76,11 +75,9 @@ const Calendar = ({ events, onDayClick }) => {
         days.push(
           <div
             key={format(currentDay, "yyyy-MM-dd")}
-            ref={clickBg}
             className={`p-2 border rounded cursor-pointer ${
-              isCurrentDay ? "bg-blue-100" : "bg-white"
+              isCurrentDay ? "bg-blue-100" : isClickedDay?"bg-green-200":"bg-white"
             }       
-            ${isClickedDay ? "bg-green-200" : ""}      
             `}
             onClick={() => {
               onDayClick(currentDay); // Pass the correct date to the function to use further
