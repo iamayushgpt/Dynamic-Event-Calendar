@@ -14,12 +14,12 @@ const EventList = ({ selectedDate, events, onAddEvent, onDeleteEvent }) => {
   }, [searchEvents])
   
   return (
-    <div className="bg-white flex flex-col gap-1 p-4 rounded shadow mt-6">
+    <div className="bg-white flex flex-col gap-1 p-4 rounded shadow mt-3">
       <div className="flex justify-between">
         <h2 className="text-lg font-bold">
           Events for {format(selectedDate, "MMMM dd, yyyy")}
         </h2>
-        <div className="flex gap-3">
+        <div className="flex flex-col sm:flex-row  gap-3">
           <input
             className="border pl-2 rounded-md"
             type="text"

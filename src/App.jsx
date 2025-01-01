@@ -118,8 +118,11 @@ if (Object.keys(cleanedFilteredEvents).length === 0) {
 
 
   return (
-    <div className="relative h-screen flex flex-col bg-gray-100 p-4">
-      <div className=" absolute flex gap-6 right-20">
+    <div className="relative overflow-x-hidden h-screen flex flex-col bg-gray-100 p-4">
+      <h1 className="text-center text-3xl font-bold mb-1">
+        Dynamic Event Calendar
+      </h1>
+      <div className="relative  flex flex-row-reverse pr-4 mb-2 gap-6">
         <button
           className="bg-blue-700 text-white px-4 py-2 rounded"
           onClick={() => setExportDropdownOpen(!exportDropdownOpen)}
@@ -166,9 +169,7 @@ if (Object.keys(cleanedFilteredEvents).length === 0) {
         )}
       </div>
 
-      <h1 className="text-center text-3xl font-bold mb-6">
-        Dynamic Event Calendar
-      </h1>
+      
       <Calendar events={events} onDayClick={handleDayClick} />
 
       {selectedDate && (
