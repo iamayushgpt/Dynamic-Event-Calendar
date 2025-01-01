@@ -127,7 +127,7 @@ if (Object.keys(cleanedFilteredEvents).length === 0) {
           Export
         </button>
         {exportDropdownOpen && (
-          <div className="absolute right-0 mt-2 w-56 bg-white border border-gray-300 rounded shadow-lg">
+          <div className="absolute right-0 top-10 mt-2 w-56 bg-white border border-gray-300 rounded shadow-lg">
             <div className="p-4">
               <label className="block mb-2 font-bold">Select Month</label>
               <select
