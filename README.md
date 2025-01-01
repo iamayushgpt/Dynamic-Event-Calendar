@@ -66,7 +66,7 @@ Follow these steps to set up and run the project on your local machine:
 
 ## **Deployment Link**
 
-The application is deployed at: **[Dynamic Event Calendar App](https://your-deployment-link.com)**  
+The application is deployed at: **[Dynamic Event Calendar App](https://deployment-link.com)**  
 
 ---
 
