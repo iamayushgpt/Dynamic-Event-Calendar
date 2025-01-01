@@ -8,12 +8,12 @@ The **Dynamic Event Calendar Application** is a React.js-based web application t
 1. **Calendar View:**
    - Displays a calendar grid for the current month.
    - Allows navigation between months and year using "Previous" and "Next" buttons.
-   - Highlights the current day and visually distinguishes selected day tpo display events.
+   - Highlights the current day and visually distinguishes selected day for display of events.
 2. **Event Management:**
    - Add events to any date by clicking on the calendar.
    - View events for a selected date in a modal.
    - Delete existing events.
-   - Filter events based on search of events name.
+   - Filter events based on searching with keywords of event names.
 3. **Data Persistence:**
    - Stores all events in `localStorage` for persistence of events across sessions.
 4. **Event Logic:**
@@ -23,7 +23,7 @@ The **Dynamic Event Calendar Application** is a React.js-based web application t
    - Fully responsive layout with Tailwind CSS, ensuring usability across different devices.
 6. **Added Bonus Features:**
    - Color coding for events based on categories ( Work, Personal and Others)
-   - Export events for a selected month and year as JSON.
+   - Export and download events for a selected month and year as JSON.
 
 ---
 
@@ -37,8 +37,8 @@ Follow these steps to set up and run the project on your local machine:
 
 2. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/flashbot007/Dynamic-Event-Calendar.git
+   cd Dynamic-Event-Calendar
    ```
 
 3. **Install Dependencies:**
@@ -50,7 +50,7 @@ Follow these steps to set up and run the project on your local machine:
    ```bash
    npm run dev
    ```
-   The app will run on `http://localhost:5173` by default (for Vite).
+   The app will run on `http://localhost:5173` by default.
 
 5. **Build for Production (Optional):**
    To generate a production-ready build:
@@ -70,5 +70,5 @@ The application is deployed at: **[Dynamic Event Calendar App](https://deploymen
 
 ---
 
-Let me know if you need any edits or help deploying and using this app!
-Thank you!!
+
+## **Thank you!!**
